@@ -1,0 +1,56 @@
+// Custom styles for the product list page
+
+// Container for the product grid
+#products {
+    margin-top: 20px;
+    padding: 20px;
+
+    .card {
+        transition: transform 0.2s, box-shadow 0.2s;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        background-color: #fff;
+
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 15px;
+
+            .card-title {
+                font-size: 1.25rem;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            .card-text {
+                font-size: 0.9rem;
+                color: #555;
+                margin-bottom: 10px;
+            }
+
+            .btn {
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+    #products {
+        .card {
+            margin-bottom: 20px;
+        }
+    }
+}
